@@ -4,6 +4,8 @@ VIP IP Blocker is a WordPress plugin that provides WP CLI commands to easily man
 
 Note that the intention of this plugin is to allow IP addresses to be blocked "on-the-fly" without the need to write, test, commit and deploy - but adding to the codebase is more efficient. As such the number of IP addresses that can be added via this plugin is limited to 50, as they are stored in a wp option and this data needs to be kept relatively small for efficiency.
 
+This plugin only affects IP addresses managed by itself, stored as an array within option `vipipblock`. Any additional IP address blocks added via the codebase (preferred method) will not be affected by this plugin.
+
 ## Installation
 
 Copy the plugin to your wpvip repo plugin directory and commit/ merge to deploy to the relevant environment, then activate. 
@@ -68,4 +70,3 @@ VIP IP Blocker is released under the [GNU General Public License v3.0](https://w
 
 ---
 **Note:** This plugin is provided as-is without any warranty. Always be cautious when blocking IP addresses, as it may affect legitimate users' access to your site.
-```
